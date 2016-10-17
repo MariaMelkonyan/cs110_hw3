@@ -18,9 +18,9 @@ const connect = function(p, t) {
 };
 
 const diamond = function(d){
-if(d%2 === 0) {
-d = d + 1;
-}
+   if(d%2 === 0) {
+   d = d + 1;
+   }
 	for(let i=0; i<(d+1)/2; i+=1){
 		connect((d-1)/2-i, 1+2*i);
 	}
